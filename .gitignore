@@ -1,0 +1,24 @@
+#A hack to ignore * without extensions
+# Ignore ALL files(*), but not with extension (!*.*) and not directories (!*/)
+*
+!*.*
+!*/
+#Ignore objects and libraries
+*.out
+*.o
+*.a
+*.so
+*.exe
+*.gch
+*.stackdump
+*.ppm
+*.log
+#Makefile
+depends
+!Makefile
+!makefile
+#Other temporary products
+.DS_STORE
+.vscode
+
+
