@@ -86,6 +86,7 @@ void VectorDestroy(Vector_t **a_vector, void (*a_elementDestroy)(void *a_item))
 
 /**********************************[ PUSH ]************************************/
 
+
 Status_t VectorPushBack(Vector_t *a_vector, void *a_item)
 {
 	Status_t return_status = ERR_OK;

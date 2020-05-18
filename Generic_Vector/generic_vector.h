@@ -2,7 +2,7 @@
 * 						  PROGRAMMER: RUBEN GERSHON
 * 						  FILE: Generic Vector header
 * 						  DATE: 22-07-2019
-******************************************************************************/
+*******************************************************************************/
 
 /** @brief Create a Generic Vector data type
  * that stores pointer to user provided elements of generic type
@@ -14,12 +14,13 @@
 #include "Status.h"
 #include <stddef.h>  /* size_t */
 
-/**********************************TYPEDEFS***********************************/
+/*********************************[ TYPEDEFS ]*********************************/
 
 typedef struct Vector Vector_t;
 typedef int	(*VectorElementAction)(void *a_element, size_t a_index, void *a_context);
 
-/*****************************************************************************/
+
+/************************************[ API ]***********************************/
 
 
 /** @brief Dynamically create a new vector object of given capacity.  
@@ -39,7 +40,7 @@ void VectorDestroy(Vector_t **a_vector, void (*a_elementDestroy)(void *a_item));
 
 
 /** @brief Add an Item to the back of the Vector.  
- *  @param[in] a_vector - Vector to append integer to.
+ *  @param[in] a_vector - Vector to push item to.
  *  @param[in] a_item - Item to add.
  *  @retval ERR_NOT_INITIALIZED if pointer is NULL.
  *  @retval ERR_REALLOCATION_FAILED if realloc failed.
@@ -48,9 +49,9 @@ void VectorDestroy(Vector_t **a_vector, void (*a_elementDestroy)(void *a_item));
 Status_t VectorPushBack(Vector_t *a_vector, void *a_item);
 
 
-/** @brief Delete an Element from the back of the Vector.  
- *  @param[in] a_vector - Vector to delete integer from.
- *  @param[out] a_pValue - ** that will receive deleted item value. Can be NULL.
+/** @brief Pop an Element from the back of the Vector.  
+ *  @param[in] a_vector - Vector to pop item from.
+ *  @param[out] a_pValue - ** that will receive deleted item value.Can be NULL.
  *  @retval ERR_NOT_INITIALIZED if pointer is NULL. 
  *  @retval VERR_OK on success. 
  *  @retval ERR_UNDERFLOW if vector is empty. */
