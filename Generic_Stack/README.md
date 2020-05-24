@@ -1,13 +1,11 @@
 PROJECT: Generic Stack
 
 This project is the implementation of a Generic Stack.
-This Stack is designed to store different data-type in a single container
+This Stack is designed to store generic data-type in a single container
 and to operate in a LIFO context (last-in first-out), where elements are 
 inserted and extracted only from one end of the container.
-We can store int, float, char or any user-defined variables 
-in the same container.
 The generic stack is in fact a stack of pointers to objects of any kind.
-The size of each item in the vector is sizeof(pointer).
+The size of each item in the container is sizeof(pointer).
 Moreover, in this Generic Stack implementation, I decided to add
 an optional Min Stack operation option.
 This very useful operation allow the user to extract the minimum value present

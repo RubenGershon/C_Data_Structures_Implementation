@@ -1,11 +1,23 @@
-Project name: Generic Vector
+PROJECT: Generic Vector
 
 This project is the implementation of a Generic Dynamic Vector.
-Generic Vector is convenient to store different data-type in a single container.
-We can store int, float, char variables etc in the same container.
+Generic Vector is convenient to store generic data-type in a single container.
 The generic vector is in fact a vector of pointers to objects of any kind.
 The size of each item in the vector is sizeof(pointer).
-The vector can be dynamically resized if full capacity is reached.
+The Vector is heap allocated and can grow and shrink on demand.
+
+The container support the following operations:
+
+- create
+- destroy
+- push
+- pop
+- get
+- set
+- capacity
+- size
+- foreach
+
 
 FILES:
 

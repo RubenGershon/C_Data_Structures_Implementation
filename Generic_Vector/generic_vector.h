@@ -4,9 +4,6 @@
 * 						  DATE: 22-07-2019
 *******************************************************************************/
 
-/** @brief Create a Generic Vector data type
- * that stores pointer to user provided elements of generic type
- * The Vector is heap allocated and can grow and shrink on demand. */ 
 
 #ifndef GENERIC_VECTOR_H_
 #define GENERIC_VECTOR_H_

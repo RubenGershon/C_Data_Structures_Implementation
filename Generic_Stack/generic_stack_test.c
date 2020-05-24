@@ -226,8 +226,7 @@ static int Test_Pop_4()
 {
     int item1 = 3;
     int item2 = 6;
-    int returnItem = 0;
-    int *ptr = &returnItem;
+    int *ptr = NULL;
     Stack_t *newStack = StackCreate(10, NULL);
     StackPush(newStack, &item1);
     StackPush(newStack, &item2);
@@ -246,8 +245,7 @@ static int Test_Pop_4()
 
 static int Test_Top_1()
 {
-    int returnItem = 0;
-    int *ptr = &returnItem;
+    int *ptr = NULL;
     if (ERR_NOT_INITIALIZED ==  StackTop(NULL, (void*)&ptr))
     {
         return SUCCESS;
@@ -269,8 +267,7 @@ static int Test_Top_3()
 {
     int item1 = 3;
     int item2 = 6;
-    int returnItem = 0;
-    int *ptr = &returnItem;
+    int *ptr = NULL;
     Stack_t *newStack = StackCreate(10, NULL);
     StackPush(newStack, &item1);
     StackPush(newStack, &item2);
@@ -290,8 +287,7 @@ static int Test_Top_4()
 {
     int item = 3;
     Stack_t *newStack = StackCreate(10, NULL);
-    int returnItem = 0;
-    int *ptr = &returnItem;
+    int *ptr = NULL;
     StackPush(newStack, &item);
 
     if ( (ERR_OK == StackPop(newStack, NULL)) && 
@@ -307,8 +303,7 @@ static int Test_Top_4()
 
 static int Test_Min_1()
 {
-    int returnItem = 0;
-    int *ptr = &returnItem;
+    int *ptr = NULL;
     if (ERR_NOT_INITIALIZED ==  StackMin(NULL, (void*)&ptr))
     {
         return SUCCESS;
@@ -328,8 +323,7 @@ static int Test_Min_2()
 
 static int Test_Min_3()
 {
-    int returnItem = 0;
-    int *ptr = &returnItem;
+    int *ptr = NULL;
     Stack_t *newStack = StackCreate(10, NULL);
     if (ERR_NOT_INITIALIZED ==  StackMin(newStack, (void*)&ptr))
     {
@@ -341,8 +335,7 @@ static int Test_Min_3()
 static int Test_Min_4()
 {
     int arr[10];
-    int returnItem = 0;
-    int *ptr = &returnItem;
+    int *ptr = NULL;
     Stack_t *newStack = StackCreate(10, CompareInts);
     FillHelper1(newStack, arr);
     
@@ -359,8 +352,7 @@ static int Test_Min_4()
 static int Test_Min_5()
 {
     int arr[10];
-    int returnItem = 0;
-    int *ptr = &returnItem;
+    int *ptr = NULL;
     Stack_t *newStack = StackCreate(10, CompareInts);
     FillHelper1(newStack, arr);
     StackPop(newStack, NULL);
