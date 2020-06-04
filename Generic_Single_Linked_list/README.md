@@ -32,11 +32,11 @@ The container support the following operations:
 
 FILES:
 
-generic_single_linked_list.h = header file with descriptive API.
-generic_single_linked_list.c = .c implementation file.
-generic_single_linked_list_test.c = test file.
-Status.h = Utility file for error status.
-makefile.
+- generic_single_linked_list.h = header file with descriptive API.
+- generic_single_linked_list.c = .c implementation file.
+- generic_single_linked_list_test.c = test file.
+- Status.h = Utility file for error status.
+- makefile.
 
 
 Author(s)

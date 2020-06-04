@@ -21,11 +21,11 @@ The container support the following operations:
 
 FILES:
 
-generic_vector.h = header file with descriptive API.
-generic_vector.c = .c implementation file.
-generic_vector_test.c = test file.
-Status.h = Utility file for error status.
-makefile.
+- generic_vector.h = header file with descriptive API.
+- generic_vector.c = .c implementation file.
+- generic_vector_test.c = test file.
+- Status.h = Utility file for error status.
+- makefile.
 
 
 Author(s)
